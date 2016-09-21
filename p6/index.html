@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<!--Lista ordenada de 3 elementos -->
+<div class ='agregar'>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        
+    </ol>
+</div>
+
+<script>
+	// inicializo la variable a partir del ultimo elemento (3)
+    var i = 4;
+
+    $('div.agregar').on('click',function(){
+        //Aca va la captura del evento.
+       
+        $('div.agregar').append('<li>' + 'Elemento' + ' ' + i + '</li>');
+        i++;
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
