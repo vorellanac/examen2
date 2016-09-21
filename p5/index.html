@@ -1,0 +1,41 @@
+<html> 
+<head> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+<meta charset=utf-8 /> 
+<title>Pregunta 5</title> 
+<style>
+
+	.a{
+		position: relative;
+		height: 150px;
+		width: 150px;
+		background-color: peru;
+	}
+</style>
+</head> 
+  <body> 
+
+  	<!-- Crear un cuadradro en pantalla de color, con las teclas de flechas derecha e izquierda se deberá poder mover
+	el cuadrado 50px en la dirección respectiva	 -->
+
+	<p class="a"></p>
+
+
+<script>
+var contador = 50;
+
+ $(document).keydown(function(tecla){ 
+            if (tecla.keyCode == 37) { 
+                $('.a').css({ 'left' : contador + 'px' });
+                contador --; 
+
+            }else if(tecla.keyCode == 39) { 
+                $('.a').css({ 'left' : contador + 'px' }); 
+                contador ++;
+            } 
+        });
+
+</script>
+  </body>
+  
+</html>
