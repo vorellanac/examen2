@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pregunta 3</title>
+</head>
+
+<!-- <!-- Se pide modelar el siguiente problema:
+En una sala de clases hay alumnos, cada alumno tiene notas y un promedio final. Se pide:
+Crear la función constructora alumno que recibe el nombre de éste y un arreglo con las notas OK
+La función constructora debe revisar que el nombre sea un string y que el arreglo de notas sean integers
+Crear el método promedio que devuelva el promedio de notas de todos los alumnos. -->
+<body>
+
+<script>
+	function alumno  (nombre,notas){
+			this.nombre = 'Victor', 
+			this.notas = notasArray
+		};
+
+		//curso
+		var vicente = new alumno('vicente',[[2],[5],[7],[5]]);	
+		var agustin = new alumno("agustin",[[2],[5],[7],[5]]);	
+
+
+		//arreglo de notas.
+		var notasArray =  [5,4,6,7];
+
+		//variable suma sumara las notas.
+		var suma = 0;
+
+		//for que recorrera el arreglo y sumara las notas.
+
+		for(var i = 0; i<notasArray.length; i ++){
+		
+			suma = suma + notasArray[i];
+		}
+		
+		//calcula el promedio.
+		function promedio (suma){
+			var resultado = (suma /4);
+			console.log('promedio' + ' ' + resultado);
+		}
+
+
+</script>
+	
+</body>
+</html>
